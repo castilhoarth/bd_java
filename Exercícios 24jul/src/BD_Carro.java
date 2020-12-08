@@ -23,6 +23,10 @@ import javax.swing.DropMode;
 
 public class BD_Carro extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtModelo;
 	private JTextField txtFabricante;
@@ -51,7 +55,6 @@ public class BD_Carro extends JFrame {
 	 * Create the frame.
 	 */
 	public BD_Carro() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("G:\\ETEC\\3\u00B0ano\\PC\\Workspace\\Exerc\u00EDcios 24jul\\car-flat.png"));
 		setTitle("Consulta de Carros");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 463, 371);
@@ -176,7 +179,6 @@ public class BD_Carro extends JFrame {
 		contentPane.add(btnIncluir);
 		
 		JLabel label_1 = new JLabel("");
-		label_1.setIcon(new ImageIcon("G:\\ETEC\\3\u00B0ano\\PC\\Workspace\\Exerc\u00EDcios 24jul\\audi-q5-taillights-black-wallpapers.jpg"));
 		label_1.setBounds(-76, -45, 545, 419);
 		contentPane.add(label_1);
 		
@@ -221,6 +223,7 @@ public class BD_Carro extends JFrame {
 			
 			btnIncluir.addActionListener(
 					new ActionListener(){
+						@SuppressWarnings("deprecation")
 						public void actionPerformed (ActionEvent e){
 							int opcao;
 					         Object[] BtSair={"Sim","Não"};
@@ -260,6 +263,7 @@ public class BD_Carro extends JFrame {
 
 			btnAlterar.addActionListener(
 				new ActionListener(){
+					@SuppressWarnings("deprecation")
 					public void actionPerformed (ActionEvent e){
 						int opcao;
 				         Object[] BtSair={"Sim","Não"};
@@ -306,6 +310,7 @@ public class BD_Carro extends JFrame {
 			
 			btnExcluir.addActionListener(
 					new ActionListener(){
+						@SuppressWarnings("deprecation")
 						public void actionPerformed (ActionEvent e){
 							int opcao;
 					         Object[] BtSair={"Sim","Não"};
